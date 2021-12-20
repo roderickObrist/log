@@ -266,13 +266,3 @@ exports.session = (details, stringified) => {
     }
   };
 };
-
-
-setTimeout(() => {
-  exports.session({
-    "protocol": "data",
-    "direction": "IN",
-    "path": "request",
-    "body": "hello world"
-  })
-}, 50)
