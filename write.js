@@ -14,6 +14,7 @@ let store = async data => {
 
   try {
     conn = await r.connect("192.168.1.15");
+    conn.rawSocket.unref();
   } catch (e) {
     store = noop;
     throw e;
